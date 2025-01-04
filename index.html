@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRC 2025 Score Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FRC 2025 Score Calculator</h1>
+        
+        <!-- AUTO Section -->
+        <section class="score-section">
+            <h2>AUTO Scoring</h2>
+            <div class="input-group">
+                <label for="autoLeave">ROBOTS Leave Starting Line:</label>
+                <div class="counter">
+                    <input type="number" id="autoLeave" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('autoLeave', 1)">▲</button>
+                        <button onclick="changeValue('autoLeave', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="autoCoralL1">CORAL Scored (L1):</label>
+                <div class="counter">
+                    <input type="number" id="autoCoralL1" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('autoCoralL1', 1)">▲</button>
+                        <button onclick="changeValue('autoCoralL1', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="autoCoralL2">CORAL Scored (L2):</label>
+                <div class="counter">
+                    <input type="number" id="autoCoralL2" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('autoCoralL2', 1)">▲</button>
+                        <button onclick="changeValue('autoCoralL2', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="autoCoralL3">CORAL Scored (L3):</label>
+                <div class="counter">
+                    <input type="number" id="autoCoralL3" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('autoCoralL3', 1)">▲</button>
+                        <button onclick="changeValue('autoCoralL3', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="autoCoralL4">CORAL Scored (L4):</label>
+                <div class="counter">
+                    <input type="number" id="autoCoralL4" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('autoCoralL4', 1)">▲</button>
+                        <button onclick="changeValue('autoCoralL4', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="autoAlgaeProcessor">ALGAE in PROCESSOR:</label>
+                <div class="counter">
+                    <input type="number" id="autoAlgaeProcessor" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('autoAlgaeProcessor', 1)">▲</button>
+                        <button onclick="changeValue('autoAlgaeProcessor', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="autoAlgaeNet">ALGAE in NET:</label>
+                <div class="counter">
+                    <input type="number" id="autoAlgaeNet" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('autoAlgaeNet', 1)">▲</button>
+                        <button onclick="changeValue('autoAlgaeNet', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TELEOP Section -->
+        <section class="score-section">
+            <h2>TELEOP Scoring</h2>
+            <div class="input-group">
+                <label for="teleopCoralL1">CORAL Scored (L1):</label>
+                <div class="counter">
+                    <input type="number" id="teleopCoralL1" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('teleopCoralL1', 1)">▲</button>
+                        <button onclick="changeValue('teleopCoralL1', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="teleopCoralL2">CORAL Scored (L2):</label>
+                <div class="counter">
+                    <input type="number" id="teleopCoralL2" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('teleopCoralL2', 1)">▲</button>
+                        <button onclick="changeValue('teleopCoralL2', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="teleopCoralL3">CORAL Scored (L3):</label>
+                <div class="counter">
+                    <input type="number" id="teleopCoralL3" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('teleopCoralL3', 1)">▲</button>
+                        <button onclick="changeValue('teleopCoralL3', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="teleopCoralL4">CORAL Scored (L4):</label>
+                <div class="counter">
+                    <input type="number" id="teleopCoralL4" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('teleopCoralL4', 1)">▲</button>
+                        <button onclick="changeValue('teleopCoralL4', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="teleopAlgaeProcessor">ALGAE in PROCESSOR:</label>
+                <div class="counter">
+                    <input type="number" id="teleopAlgaeProcessor" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('teleopAlgaeProcessor', 1)">▲</button>
+                        <button onclick="changeValue('teleopAlgaeProcessor', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="teleopAlgaeNet">ALGAE in NET:</label>
+                <div class="counter">
+                    <input type="number" id="teleopAlgaeNet" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('teleopAlgaeNet', 1)">▲</button>
+                        <button onclick="changeValue('teleopAlgaeNet', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="deepHang">ROBOTS in Deep Hang:</label>
+                <div class="counter">
+                    <input type="number" id="deepHang" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('deepHang', 1)">▲</button>
+                        <button onclick="changeValue('deepHang', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="shallowHang">ROBOTS in Shallow Hang:</label>
+                <div class="counter">
+                    <input type="number" id="shallowHang" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('shallowHang', 1)">▲</button>
+                        <button onclick="changeValue('shallowHang', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="teleopParked">ROBOTS Parked:</label>
+                <div class="counter">
+                    <input type="number" id="teleopParked" min="0" value="0" readonly>
+                    <div class="buttons">
+                        <button onclick="changeValue('teleopParked', 1)">▲</button>
+                        <button onclick="changeValue('teleopParked', -1)">▼</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Total Score -->
+        <section class="total-section">
+            <h2>Total Score: <span id="totalScore">0</span></h2>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
